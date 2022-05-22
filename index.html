@@ -11,6 +11,7 @@
 <body>
     <div class="container" id="todoList">
         <h1 class="mt-5">Add Your Todo Here : </h1>
+        <todo-input></todo-input>
         <div class="input-group mb-5 mt-4">
             <input v-model="newTodo" id="todoField" type="text" class="form-control border border-warning" placeholder="Add your todo" aria-label="Recipient's username" aria-describedby="button-addon2" >
             <button @click="addTodo" class="btn btn-warning" type="button" id="button-addon2" onclick="document.getElementById('todoField').value = ''">Add</button>
@@ -24,8 +25,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="component/todo-input.js"></script>
     <script>
-        const mountedapp = app.mount('#todoList');
+    const mountedapp = app.mount('#todoList');
     </script>
 </body>
 </html>
